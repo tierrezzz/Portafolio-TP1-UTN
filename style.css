@@ -131,6 +131,7 @@ body {
 }
 
 .img-pequena {
+    
     width: 488px;
     height: 550px;
     object-fit: cover;  
