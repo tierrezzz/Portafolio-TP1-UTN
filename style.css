@@ -1,0 +1,34 @@
+
+:root
+{
+    --color-primario: #000000;
+    --color-secundario: #f6f6f6;
+    --color-terciario: #22D4FD;
+    --color-hover: #272727;
+}
+
+body {
+    background-color: var(--color-primario);
+    color:var(--color-secundario);
+    box-sizing: border-box;
+}
+
+.header
+{
+    padding: 2% 0% 0% 15%;
+}
+
+.header_menu
+{
+    display: flex;
+    gap: 80px;
+}
+
+.header_menu_link
+{
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-terciario);
+    text-decoration: none;
+}
