@@ -58,3 +58,10 @@ body {
 .titulo-destaque {
     color: var(--color-terciario);
 }
+
+
+.img-pequena {
+    width: 488px;
+    height: 550px;
+    object-fit: cover;  
+}
