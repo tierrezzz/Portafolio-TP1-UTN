@@ -1,5 +1,4 @@
 
-variables css
 :root
 {
     --color-primario: #000000;
@@ -32,4 +31,30 @@ body {
     font-weight: 600;
     color: var(--color-terciario);
     text-decoration: none;
+}
+.presentacion
+{
+    display: flex;
+    align-items:center;
+    padding: 6% 15%;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.presentacion_contenido
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentacion_contenido_titulo
+{
+    font-size: 2.25rem;
+    font-family: var(--fuente-krona);
+}
+
+.titulo-destaque {
+    color: var(--color-terciario);
 }
