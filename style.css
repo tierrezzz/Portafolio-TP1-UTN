@@ -109,6 +109,18 @@ body {
 {
     background-color: var(--color-hover);
 }
+
+.footer
+{
+    background-color: var(--color-terciario);
+    padding: 24px;
+    color: var(--color-primario);
+    text-align: center;
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
 .img-pequena {
     width: 488px;
     height: 550px;
