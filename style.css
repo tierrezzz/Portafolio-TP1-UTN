@@ -119,8 +119,7 @@ body {
     width: 50%;
 }
 
-.footer
-{
+.footer {
     background-color: var(--color-terciario);
     padding: 24px;
     color: var(--color-primario);
@@ -128,6 +127,7 @@ body {
     font-family: var(--fuente-montserrat);
     font-size: 1.5rem;
     font-weight: 400;
+    margin-top: 60px; /* Esta línea es la nueva */
 }
 
 .img-pequena {
@@ -136,4 +136,37 @@ body {
     height: 550px;
     object-fit: cover;  
 
+}
+.contenedor-robot {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente si le das altura */
+    margin: 40px 0;
+}
+
+.img-robot {
+    width: 50%;
+    width: 250px; /* Ajustá el tamaño como quieras */
+    height: auto;
+}
+
+@media (max-width: 1200px )
+{
+  .header
+  {
+      padding: 10%;
+  }
+  .header_menu
+  {
+     justify-content: center; 
+  }
+  .presentacion
+  {
+      flex-direction: column-reverse;
+      padding: 5%;
+  }
+  .presentacion_contenido
+  {
+      width: auto;
+  }
 }
