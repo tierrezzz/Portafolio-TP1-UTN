@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* variables css */
 :root
 {
     --color-primario: #000000;
@@ -10,17 +11,20 @@
     --fuente-montserrat: 'Montserrat',  sans serif; 
     --fuente-krona: 'Krona One', snas serif;
 }
+
+/* reset global */
 *{
     padding: 0;
     margin: 0;
 }
-
+/* Estilos generales del body*/
 body {
     background-color: var(--color-primario);
     color:var(--color-secundario);
     box-sizing: border-box;
 }
 
+/* Encabezado*/
 .header
 {
     padding: 2% 0% 0% 15%;
@@ -40,7 +44,7 @@ body {
     color: var(--color-terciario);
     text-decoration: none;
 }
-
+/* Organiza dos elementos en horizontal, separados y centrados verticalmente. */
 .presentacion
 {
     display: flex;
@@ -49,7 +53,7 @@ body {
     justify-content: space-between;
     gap: 82px;
 }
-
+/* Contenedor de texto dentro de .presentacion, en columna con separación vertical. */
 .presentacion_contenido
 {
     width: 50%;
@@ -57,16 +61,18 @@ body {
     flex-direction: column;
     gap: 40px;
 }
-
+/* Estilo del título principal. */
 .presentacion_contenido_titulo
 {
     font-size: 2.25rem;
     font-family: var(--fuente-krona);
 }
-
+/* Color destacado para partes del texto. */
 .titulo-destaque {
     color: var(--color-terciario);
 }
+
+/* Organiza los botones en columna.*/
 .presentacion_contenido_texto
 {
     font-family: var(--fuente-montserrat);
@@ -82,6 +88,7 @@ body {
     gap: 32px;
 }
 
+/* Botones visuales: ancho del 50%, centrados, con bordes y color destacado.*/ 
 .presentacion_enlaces_link, .proyectos_link
 {
     width: 50%;
@@ -104,7 +111,7 @@ body {
     font-size: 1.5rem;
     font-weight: 400;
 }
-
+/* cambia el fondo con el mouse */
 .presentacion_enlaces_link:hover
 {
     background-color: var(--color-hover);
@@ -119,6 +126,7 @@ body {
     width: 50%;
 }
 
+/* Footer*/
 .footer {
     background-color: var(--color-terciario);
     padding: 24px;
@@ -131,25 +139,41 @@ body {
 }
 
 .img-pequena {
-    
     width: 488px;
     height: 550px;
     object-fit: cover;  
 
 }
+ /* Robot centrado*/
 .contenedor-robot {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center;     /* Centra verticalmente si le das altura */
+    justify-content: center; 
+    align-items: center;     
     margin: 40px 0;
 }
-
-.img-robot {
-    width: 50%;
-    width: 250px; /* Ajustá el tamaño como quieras */
-    height: auto;
+ /* Diseño de sección de proyectos con robot */
+.seccion-proyectos {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
 }
 
+/* Contenedor del bloque de links de proyectos */
+.bloque-proyectos {
+    flex: 1;
+    min-width: 250px;
+}
+
+/* Estilo de la imagen del robot */
+.robot-lateral {
+    width: 100%;
+    max-width: 400px; 
+    height: auto;
+}
+/* Media Query para pantallas chicas */
 @media (max-width: 1200px )
 {
   .header
