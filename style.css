@@ -173,6 +173,42 @@ body {
     max-width: 400px; 
     height: auto;
 }
+.tabla-container {
+    padding: 2% 15%;
+    margin-top: 40px;
+}
+
+.tabla-titulo {
+    font-family: var(--fuente-krona);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--color-terciario);
+    text-align: center;
+}
+
+.tabla-sobremi {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--fuente-montserrat);
+    font-size: 1.2rem;
+}
+
+.tabla-sobremi th,
+.tabla-sobremi td {
+    border: 1px solid var(--color-terciario);
+    padding: 12px;
+    text-align: center;
+    color: var(--color-secundario);
+}
+
+.tabla-sobremi th {
+    background-color: var(--color-hover);
+    font-weight: 600;
+}
+
+.tabla-sobremi tr:nth-child(even) {
+    background-color: rgba(34, 212, 253, 0.1);
+}
 /* Media Query para pantallas chicas */
 @media (max-width: 1200px )
 {
